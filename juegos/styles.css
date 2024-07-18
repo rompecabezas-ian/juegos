@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: none;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: none;
+    color: #fff;
+}
+
+.title-image {
+    width: 80%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: flex-start; /* Alinea los elementos al principio */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no caben en una sola línea */
+    margin: 20px;
+}
+
+.game-section {
+    width: 300px; /* Ancho fijo para cada sección de juego */
+    max-width: 100%; /* Ancho máximo para adaptarse a pantallas más pequeñas */
+    padding: 20px;
+    margin: 0 10px 20px; /* Espacio entre las secciones de juego */
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.game-section img {
+    width: 100%;
+    height: auto; /* Ajustar automáticamente la altura según el ancho */
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.game-section p {
+    color: none;
+    margin-bottom: 15px;
+}
+
+.play-button {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius:20px;
+    transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: blue;
+}
+
+@media (max-width: 768px) {
+    .game-section {
+        flex-basis: calc(50% - 20px); /* Ancho máximo, teniendo en cuenta el margen */
+        max-width: none;
+    .play-button {
+        position: relative; /* Cambia la posición a relativa para flujo normal del documento */
+        margin: 10px auto; /* Alinea el botón al centro y le da un margen */
+        bottom: auto; /* Reinicia la posición desde la parte inferior */
+        left: auto; /* Reinicia la alineación horizontal centrada */
+        transform: none; /* Reinicia la transformación */
+    }
+    }
+}

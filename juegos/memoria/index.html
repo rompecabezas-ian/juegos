@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria para Niños</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo CSS aquí si lo tienes -->
+</head>
+<body>
+    <header>
+        <h1>Juego de Memoria para Niños</h1>
+    </header>
+
+    <main>
+        <section id="game-board" class="board">
+            <!-- Aquí se generarán dinámicamente las cartas -->
+        </section>
+
+        <button id="start-game">Comenzar Juego</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Derechos Reservados</p>
+    </footer>
+
+    <audio id="flip-card-sound">
+        <source src="sonido/mario-bros-jump.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+    </audio>
+
+    <audio id="match-found-sound">
+        <source src="sonido/woohoo-text-sms.mp3" type="audio/mpeg">
+        
+        Tu navegador no soporta audio HTML5.
+    </audio>
+
+    <audio id="game-complete-sound">
+        <source src="victory-sonic.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+    </audio>
+    <script src="script.js"></script> <!-- Enlaza tu archivo JavaScript aquí -->
+</body>
+</html>
